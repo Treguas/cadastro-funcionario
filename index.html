@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Dados Funcionário</title>
+</head>
+<body>
+
+    <header class="page-header">
+
+        <div class="header">
+
+        <h2>Digite os dados do Funcionário</h2>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <form id="table-funcionario">
+            <fieldset>
+                <legend>Dados do Funcionário</legend>
+
+                <div class="input-block">
+                    <label for="name">Nome</label>
+                    <input id="name" placeholder="Nome do Funcionário">
+                </div>
+
+              <div class="input-block">
+                <label for="cpf">CPF</label>
+                <input id="cpf" placeholder="CPF do Funcionário" maxlength="14" >
+              </div>
+
+              <div class="input-block">
+                <label for="rg">RG</label>
+                <input id="rg" placeholder="RG do Funcionário" maxlength="12" >
+              </div>
+
+              <div class="input-block">
+                <label for="datenasc">Data de Nascimento</label>
+                <input type="date" id="datanasc" placeholder="CPF do Funcionário" >
+              </div>
+
+              <div >
+                <label for="cnh">Selecione o Tipo de Habilitação</label></BR>
+                <input class="checkbox A" type="checkbox" name="A"> A 
+                <input class="checkbox B" type="checkbox" name="B"> B 
+                <input class="checkbox C" type="checkbox" name="C"> C
+                <input class="checkbox D" type="checkbox" name="D"> D
+                <input class="checkbox E" type="checkbox" name="E"> E
+                </select>
+              </div>
+
+              <div class="input-block">
+                <label for="est-civil">Selecione o Estado Civil</label>
+                <select id="est-civil">
+                    <option value="">Casado(a)</option>
+                    <option selected value="">Solteiro(a)</option>
+                    <option value="">Divorciado(a)</option>
+                    <option value="">Viúvo(a)</option>
+                </select>
+              </div>
+
+              <div class="input-block">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite o CEP" maxlength="9" onchange="validateCep(); getDataAddressCEP(this.value)" onkeypress="mascara(this, '#####-###')" maxlength="9">
+              </div>
+
+              <div class="input-block">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Digite a Rua" >
+              </div>
+
+              
+
+              <div class="input-block">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" placeholder="Digite o Bairro" >
+              </div>
+
+              <div class="input-block">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" placeholder="Digite a Cidade" >
+              </div>
+
+              <div class="input-block">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" placeholder="Digite o Estado" >
+              </div>
+
+              <div class="input-block">
+                <label for="numero">Número</label>
+                <input type="number" id="numero" placeholder="Digite o Numero da Casa" >
+              </div>
+
+              <div class="input-block">
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" placeholder="Digite o Complemento" >
+              </div>
+
+              <button id="button">Enviar</button>
+            </fieldset>
+
+        </form>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

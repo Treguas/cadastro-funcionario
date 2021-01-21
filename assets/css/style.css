@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+
+:root {
+  /* CSS variables */
+  --color-background: #f0f0f7;
+  --color-text-base: #e3e2f7;
+  --color-line-in-white: #e6e6f0;
+
+
+  font-size: 60%; /* rem measurement controller */
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+#page-landing {
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem 'Titillium Web', sans-serif;
+}
+
+.page-header {
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #000000;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  font: 500 2.1rem 'Titillium Web', sans-serif;
+  padding-top: 2em;
+
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  max-width: 75%;
+  background-color: #fff;
+  margin-top: 14%;
+  border-radius: 8px;
+}
+
+#table-funcionario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+#table-funcionario fieldset {
+  width: 50%;
+  border: none;
+}
+
+#table-funcionario legend {
+  font: 700 2.4rem 'Titillium Web', sans-serif;
+  padding-top: 1.6rem;
+  margin-bottom: 1em;
+}
+
+.checkbox {
+  margin: 12px 0 0 12px;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-block input, select {
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-line-in-white);
+  font: 1.6rem 'Titillium Web', sans-serif;
+  padding: 0 1.6rem;
+  width: 100%;
+}
+
+label {
+  margin-top: 1em;
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+
+}
+
+.input-block:focus-within::after {
+  content: "";
+  width: calc(100% - 3.2rem);
+  height: 2px;
+  background: #01a2be;
+  position: absolute;
+  left: 1.6rem;
+  bottom: 0;
+}
+
+button {
+  margin: 12px auto;
+  width: 100%;
+  background: #01a2be;
+  border: none;
+  color: rgb(20, 18, 18);
+  height: 3.4rem;
+  border-radius: 0.8rem;
+  margin-right: 1.6rem;
+  font: 700 2.4rem 'Titillium Web', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #14889c;
+  cursor: pointer;
+  color: #fff
+}
